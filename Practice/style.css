@@ -1,0 +1,12 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: olive;
+  display: inline-block;
+}
+
+.first {
+  background-color: orangered;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
