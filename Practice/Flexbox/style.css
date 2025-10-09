@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  border: 2px solid #444;
+  align-items: center;
+}
+
+.item {
+  padding: 20px;
+  background-color: peachpuff;
+  margin: 10px;
+}
