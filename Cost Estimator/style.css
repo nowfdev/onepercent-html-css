@@ -1,0 +1,74 @@
+body {
+  background-color: #e3d8fa;
+
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+}
+
+h1 {
+  color: #422f89;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 64px 64px 64px;
+  position: relative;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #b9aaef;
+  margin: 0 0 32px 0;
+}
+
+.tabs p {
+  padding: 16px;
+}
+
+.tabs p:hover {
+  color: #453275;
+  cursor: pointer;
+}
+
+.tabs p.active {
+  color: #453275;
+  position: relative;
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  position: absolute;
+  top: 90px;
+}
+
+.tabs .active::before {
+  content: "";
+  width: 200%;
+  height: 4px;
+  background-color: rgb(83, 49, 156);
+  position: absolute;
+  bottom: -23.5px;
+  left: -50%;
+  z-index: 2;
+  border-radius: 10px;
+}
