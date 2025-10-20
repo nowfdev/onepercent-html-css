@@ -27,3 +27,33 @@ span {
   font-weight: bold;
   text-shadow: 0 -6.25px blue, 0 -12.5px cyan, 0 6.25px red, 0 12.5px yellow;
 }
+
+@media only screen and (max-width: 1700px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  span {
+    font-weight: bold;
+    text-shadow: 0 -3.25px blue, 0 -6.5px cyan, 0 3.25px red, 0 6.5px yellow;
+  }
+}
