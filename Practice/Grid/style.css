@@ -5,24 +5,104 @@
   background-color: black;
   box-shadow: 0 6px 20px rgb(0 0 0 / 0.2);
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  /* grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 200px);
+  grid-auto-flow: row;
+  grid-auto-rows: 200px; */
+  /* grid-auto-flow: column dense; */
+  /* grid-template-areas:
+    "navbar navbar"
+    "main sidebar"
+    ". footer"; */
+  /* grid-template-areas:
+    "a a c"
+    "a a c"
+    "b b c"; */
+  /* grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end];
+  grid-template-rows: [row1-start] 1fr [row1-end row2-start] 1fr [row2-end row3-start] 1fr [row3-end]; */
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr); */
   /* grid-template-columns: minmax(500px, 1fr) minmax(500px, 1fr); */
   /* grid-template-rows: 1fr  */
   /* grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: minmax(100px, auto); */
-  /* grid-template-columns: repeat(4, minmax(100px, 200px)); */
+  /* grid-template-columns:  (4, minmax(100px, 200px)); */
   /* grid-template: repeat(2, 1fr) / repeat(5, minmax(100px, 200px)); */
   /* grid-template-columns: fit-content(300px) fit-content(600px) fit-content(
       300px
     ); */
 
-  grid-template: 1fr 1fr / repeat(4, 1fr);
+  /* grid-template: 1fr 1fr / repeat(4, 1fr); */
   /* column-gap: 20px;
   row-gap: 16px; */
-  grid-gap: 16px 20px;
+  /* grid-gap: 16px 20px; */
 }
 
 .box {
   color: white;
   font-size: 1.5rem;
   text-align: center;
+}
+
+/* .first {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.second {
+  /* grid-column-start: 2;
+  grid-column-end: 3; */
+/* grid-row-start: 2;
+  grid-row-end: 4; */
+
+/* Shortdhand */
+/* grid-column: 2/3;
+  grid-row: 2/4; */
+/* } */
+
+/* .first {
+  grid-column-start: col2-start;
+  grid-column-end: col3-end;
+  grid-row-start: row2-start;
+  grid-row-end: row3-end;
+} */
+
+/* .first {
+  grid-area: a;
+}
+
+.second {
+  grid-area: b;
+}
+
+.third {
+  grid-area: c;
+} */
+
+/* .first {
+  grid-area: navbar;
+}
+
+.second {
+  grid-area: main;
+}
+
+.third {
+  grid-area: sidebar;
+}
+
+.fourth {
+  grid-area: footer;
+} */
+
+/* .first {
+  grid-row-start: 2;
+} */
+
+.fit {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
